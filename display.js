@@ -5,7 +5,7 @@ const mockDatabase = {
         nama: "C8HD FRON LH",
         model: "C8HD", 
         spek: "Cover Kulit, Warna hitam dan Coklat ditengan, Air bag.",
-        foto_url: "http://127.0.0.1:5500/asset/c8hd_fron.png"
+        foto_url: "/asset/c8hd_fron.png"
     },
     "V008341144@79100-VT091-E6@CSHD@@1@@@": {
         nama: "CPA FRON LH",
