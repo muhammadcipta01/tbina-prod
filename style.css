@@ -1,0 +1,162 @@
+/* -- TATA LETAK DASAR & RESET -- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef1f4; /* Warna latar belakang lembut */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff; /* Biru utama */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* -- GAYA CARD (KOTAK) -- */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex-grow: 1;
+    min-width: 300px;
+}
+
+.scan-area {
+    flex-basis: 350px; /* Lebar tetap untuk kamera */
+}
+
+.manual-search-area {
+    flex-basis: 300px; /* Lebar tetap untuk form */
+}
+
+.data-display-area {
+    flex-basis: 350px;
+}
+
+.card h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eef1f4;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+/* -- GAYA SCANNER -- */
+#reader {
+    width: 100%;
+    height: 300px;
+    margin: 15px 0;
+    border: 3px solid #007bff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.status-message {
+    font-weight: bold;
+    color: #28a745; /* Hijau untuk status sukses/siap */
+}
+
+/* -- GAYA FORM MANUAL -- */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* -- GAYA TOMBOL (BUTTON) -- */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* -- GAYA TAMPILAN DATA -- */
+.detail-row {
+    padding: 8px 0;
+    border-bottom: 1px dotted #000000;
+}
+
+.detail-row strong {
+    min-width: 120px;
+    display: inline-block;
+}
+
+.data-value {
+    font-weight: bold;
+    color: #333;
+}
+
+.photo-area {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px dashed #000000;
+}
+
+.item-photo {
+    width: auto;
+    max-width: 600px;
+    height: 280px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
