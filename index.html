@@ -3,29 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman 1: Pemindai QR Code</title>
+    <title>Aplikasi Cek Barang - Pemindaian</title>
     <script src="https://unpkg.com/html5-qrcode"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    
-    <style>
-        .container { max-width: 800px; } /* Fokuskan pada scanner dan input */
-        .card { width: 100%; margin-bottom: 20px; }
-        .data-display-area { display: none; } /* Sembunyikan area display di halaman ini */
-        .manual-search-area { margin-top: 20px; }
-    </style>
 </head>
 <body>
 
     <header>
         <i class="fas fa-barcode"></i>
-        <h1>Quality Control System</h1>
+        <h1>Sistem Cek Barang Cepat</h1>
     </header>
 
-    <div class="container">
+    <div class="container-split">
         
         <section class="card scan-area">
-            <h2><i class="fas fa-camera"></i> QR code untuk verifikasi kualitas</h2>
+            <h2><i class="fas fa-camera"></i> Pemindaian Otomatis</h2>
             <p class="status-message" id="search-status">Siap memindai...</p>
             <div id="reader"></div>
         </section>
@@ -36,18 +29,19 @@
             <div class="input-group">
                 <input type="text" id="input-qrcode-id" placeholder="Masukkan ID QR Code..." aria-label="Input QR Code ID">
                 <button class="btn btn-primary" onclick="searchManual('qrcode')">
-                    <i class="fas fa-search"></i> Cari ID & Pindah
+                    <i class="fas fa-search"></i> Cari ID
                 </button>
             </div>
             
             <div class="input-group">
                 <input type="text" id="input-model" placeholder="Masukkan Model Barang..." aria-label="Input Model Barang">
                 <button class="btn btn-secondary" onclick="searchManual('model')">
-                    <i class="fas fa-tag"></i> Cari Model & Pindah
+                    <i class="fas fa-tag"></i> Cari Model
                 </button>
             </div>
+            
+            <p style="color: gray; font-size: 0.9em; margin-top: 20px;">*Gunakan pencarian manual jika kamera tidak tersedia.</p>
         </section>
-
     </div>
 
     <script src="index.js"></script>

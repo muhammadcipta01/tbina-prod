@@ -1,10 +1,10 @@
+// scanner.js
 let html5QrcodeScanner;
 const scannerId = "reader";
 let isScannerPaused = false; 
 const RESCAN_DELAY_MS = 3000; 
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Inisialisasi dan Render Pemindai
     html5QrcodeScanner = new Html5QrcodeScanner(
         scannerId, 
         { fps: 10, qrbox: {width: 250, height: 250} },
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function onScanSuccess(decodedText, decodedResult) {
     if (isScannerPaused) return; 
 
-    // Jeda pemindai sebentar
     html5QrcodeScanner.pause(true); 
     isScannerPaused = true;
     
@@ -26,7 +25,7 @@ function onScanSuccess(decodedText, decodedResult) {
     // LANGKAH PENTING: Pindah ke halaman display
     redirectToDisplay('qrcode', decodedText);
     
-    // Setelah jeda, lanjutkan pemindaian (untuk mode auto-rescan, jika user kembali)
+    // Auto-Rescan logic (jika user kembali)
     setTimeout(() => {
         html5QrcodeScanner.resume(); 
         isScannerPaused = false;
@@ -35,7 +34,7 @@ function onScanSuccess(decodedText, decodedResult) {
 }
 
 function onScanFailure(error) {
-    // ...
+    // Diabaikan
 }
 
 // FUNGSI PENCARIAN MANUAL

@@ -1,15 +1,15 @@
-/* -- TATA LETAK DASAR & RESET -- */
+/* style.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eef1f4; /* Warna latar belakang lembut */
+    background-color: #f6f8fa; 
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #007bff; /* Biru utama */
+    background-color: #007bff; 
     color: white;
     padding: 20px;
     text-align: center;
@@ -24,14 +24,26 @@ header h1 {
     margin-left: 10px;
 }
 
-.container {
+.container, .container-split {
     display: flex;
-    flex-wrap: wrap; /* Agar responsif di layar kecil */
+    flex-wrap: wrap; 
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     padding: 0 20px 20px 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Tata letak Halaman Scanner (Split) */
+.container-split .card {
+    flex-basis: 50%; 
+    min-width: auto;
+}
+
+/* Tata letak Halaman Display */
+.container .card {
+    width: 100%;
+    max-width: 600px;
 }
 
 /* -- GAYA CARD (KOTAK) -- */
@@ -40,20 +52,7 @@ header h1 {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    flex-grow: 1;
-    min-width: 300px;
-}
-
-.scan-area {
-    flex-basis: 350px; /* Lebar tetap untuk kamera */
-}
-
-.manual-search-area {
-    flex-basis: 300px; /* Lebar tetap untuk form */
-}
-
-.data-display-area {
-    flex-basis: 350px;
+    position: relative;
 }
 
 .card h2 {
@@ -67,8 +66,8 @@ header h1 {
 /* -- GAYA SCANNER -- */
 #reader {
     width: 100%;
-    height: 300px;
-    margin: 15px 0;
+    height: 500px;
+    margin: 0% 0;
     border: 3px solid #007bff;
     border-radius: 8px;
     overflow: hidden;
@@ -76,20 +75,21 @@ header h1 {
 
 .status-message {
     font-weight: bold;
-    color: #28a745; /* Hijau untuk status sukses/siap */
+    color: #28a745; 
 }
 
-/* -- GAYA FORM MANUAL -- */
+/* -- GAYA FORM & INPUT -- */
 .input-group {
     display: flex;
     gap: 10px;
     margin-bottom: 15px;
 }
 
-.input-group input {
+.input-group input, .input-group button {
     flex-grow: 1;
     padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 /* -- GAYA TOMBOL (BUTTON) -- */
@@ -102,38 +102,22 @@ header h1 {
     transition: background-color 0.3s;
 }
 
-.btn-primary {
-    background-color: #007bff;
+.btn-primary, .btn-secondary {
     color: white;
 }
-.btn-primary:hover {
-    background-color: #0056b3;
-}
 
-.btn-secondary {
-    background-color: #6c757d;
-    color: white;
-}
-.btn-secondary:hover {
-    background-color: #5a6268;
-}
+.btn-primary { background-color: #007bff; }
+.btn-primary:hover { background-color: #0056b3; }
 
-.btn-danger {
-    background-color: #dc3545;
-    color: white;
-}
-.btn-danger:hover {
-    background-color: #c82333;
-}
+.btn-secondary { background-color: #6c757d; }
+.btn-secondary:hover { background-color: #5a6268; }
 
-.btn-full {
-    width: 100%;
-}
+.btn-full { width: 100%; }
 
 /* -- GAYA TAMPILAN DATA -- */
 .detail-row {
-    padding: 8px 0;
-    border-bottom: 1px dotted #000000;
+    padding: 10px 0;
+    border-bottom: 1px dotted #eef1f4;
 }
 
 .detail-row strong {
@@ -144,19 +128,21 @@ header h1 {
 .data-value {
     font-weight: bold;
     color: #333;
+    display: block; 
+    margin-top: 5px;
 }
 
 .photo-area {
     text-align: center;
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 2px dashed #000000;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #f0f0f0;
 }
 
 .item-photo {
-    width: auto;
-    max-width: 600px;
-    height: 280px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
     border: 1px solid #eee;
     border-radius: 5px;
 }
