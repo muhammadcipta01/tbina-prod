@@ -15,17 +15,17 @@ const MOCK_DATABASE = {
         foto_url: "https://via.placeholder.com/250/007bff/FFFFFF?text=BUKU"
     },
     // Data yang dicari setelah ekstraksi @CSHD
-    "@CSHD@@1@@@": {
-        nama: "Laptop Kerja X1 Carbon",
-        model: "LAPTOP-X1", 
-        spek: "Intel i7, RAM 16GB, SSD 512GB. Barang inventaris kantor.",
-        foto_url: "asset/c8hd_fron.png"
+    "@CPA@@1@@@": {
+        nama: "CPA FRON",
+        model: "CPA FRON", 
+        spek: "COVER MATRIAL : KULIT , WARNA COVER : FULL HITAM , FITUR : POWER SEAT , JAHITAN : STICK , ",
+        foto_url: "asset/cpa fron.png"
     },
     "@C8ALD@@1@@@": {
-        nama: "Smartwatch Seri 7 GPS",
-        model: "SMART-7", 
-        spek: "Layar OLED 1.5 inch, Waterproof IP68, Monitor Detak Jantung dan Oksigen darah. Daya tahan baterai 7 hari.",
-        foto_url: "https://via.placeholder.com/250/555555/FFFFFF?text=SMARTWATCH"
+        nama: "C8ALD FRON", 
+        model: "C8ALD FRON", 
+        spek: "COVER MATRIAL : KULIT , WARNA COVER : FULL HITAM , FITUR : POWER SEAT , JAHITAN : STICK ,.",
+        foto_url: "asset/c8hd_fron.png"
     }
 };
 // --------------------------------------------------------
