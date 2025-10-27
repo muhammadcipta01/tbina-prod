@@ -29,15 +29,26 @@ header h1 {
     flex-wrap: wrap; 
     justify-content: center;
     gap: 25px;
-    padding: 0 20px 20px 20px;
+    padding: 0;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Tata letak Halaman Scanner (Split) */
+
+.container-split {
+    display: flex;       /* Kunci: Mengaktifkan tata letak kolom */
+    flex-wrap: wrap;     /* Memungkinkan bertumpuk di layar kecil */
+    justify-content: center;
+    gap: 5px;
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    margin: 0; /* Margin untuk memusatkan di tengah halaman */
+}
+
 .container-split .card {
-    flex-basis: 50%; 
-    min-width: auto;
+    flex-basis: 48%; 
+    min-width: 300px;
 }
 
 /* Tata letak Halaman Display */
@@ -48,11 +59,11 @@ header h1 {
 
 /* -- GAYA CARD (KOTAK) -- */
 .card {
-    background: white;
-    padding: 25px;
+    background: rgb(255, 255, 255);
+    padding: 5px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    position: relative;
+    position: flex;
 }
 
 .card h2 {
@@ -65,8 +76,9 @@ header h1 {
 
 /* -- GAYA SCANNER -- */
 #reader {
+
     width: 100%;
-    height: 500px;
+    height: flex;
     margin: 0% 0;
     border: 3px solid #007bff;
     border-radius: 8px;
@@ -117,7 +129,7 @@ header h1 {
 /* -- GAYA TAMPILAN DATA -- */
 .detail-row {
     padding: 10px 0;
-    border-bottom: 1px dotted #eef1f4;
+    border-bottom: 10px dotted #eef1f4;
 }
 
 .detail-row strong {
@@ -132,54 +144,65 @@ header h1 {
     margin-top: 5px;
 }
 
-.photo-area {
-    text-align: center;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 2px dashed #f0f0f0;
-}
+
 
 .item-photo {
     width: 100%;
     max-width: 250px;
     height: auto;
-    border: 1px solid #eee;
+    border: 1px solid #fffafa;
     border-radius: 5px;
 }
 
 
 /* Area Foto/Model 3D */
 .photo-area {
-    flex: 1 1 100%; /* Ambil 100% lebar di atas */
+    flex: 1 1 45%;
     min-width: 300px; 
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.15);
+    border-radius: 1px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+    text-align: center; 
+    padding: 0;
+}
+
+.detail-split-layout {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 25px; 
+    max-width: 1200px;
+    /* PERBAIKAN: Margin 20px auto untuk memusatkan kontainer */
+    margin: 20px auto; 
+    padding: 0 20px;
 }
 
 /* Style untuk Model Viewer */
 model-viewer {
     width: 100%;
     height: 350px; 
-    margin: 0;
+    margin: 0px;
     display: block; /* Penting untuk responsif */
 }
 
 /* Area Detail Teks (Nama, Spek, ID) */
 .detail-area {
-    flex: 1 1 100%; /* Ambil 100% lebar di bawah foto/model */
-    padding: 10px 0;
+    flex: 1 1 100%;
+    min-width: auto;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-
+  
 .detail-row {
     margin-bottom: 12px;
-    border-bottom: 1px dashed #eee;
+    border-bottom: 1px dashed #ffffff;
     padding-bottom: 8px;
 }
 
 .detail-row strong {
     font-weight: bold;
-    color: #555;
+    color: #000000;
     display: block; /* Memisahkan label dan nilai */
     margin-bottom: 3px;
     font-size: 0.9em;
@@ -187,7 +210,7 @@ model-viewer {
 
 /* Style untuk Nilai Data (span) */
 .data-value {
-    color: #333;
+    color: #000000;
     font-size: 1.1em;
 }
 
@@ -215,11 +238,25 @@ model-viewer {
 }
 
 /* Responsif (Layar Kecil) */
-@media (max-width: 600px) {
+@media (max-width: 768px) { /* Ubah breakpoint menjadi 768px untuk kompatibilitas tablet/ponsel yang lebih baik */
+    .detail-split-layout {
+        /* Saat layar kecil, tumpuk kolom vertikal */
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px; /* Sedikit margin agar konten tidak menempel di tepi */
+    }
+    
+    /* Pastikan elemen mengambil lebar penuh saat bertumpuk */
+    .photo-area, .detail-area {
+        flex-basis: 100%;
+        min-width: unset; /* Hapus batasan minimum lebar */
+    }
+
+    /* ... sisa media query yang Anda miliki ... */
     .container {
         margin: 10px;
         padding: 15px;
-        border-radius: 0; /* Full width di mobile */
+        border-radius: 0; 
     }
     
     header {
@@ -228,5 +265,6 @@ model-viewer {
 
     model-viewer {
         height: 250px;
+        width: 250px;
     }
 }
