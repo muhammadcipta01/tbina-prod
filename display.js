@@ -29,15 +29,15 @@ const MOCK_DATABASE = {
         audio_path: "asset/audio/CAC_RR2_RH.mp3"
     },
     "@79200-010KP-16@C8ALD@@1@@@": {
-        nama: "C8ALD RR2",
-        model: "C8ALD RR2 RH", 
+        nama: "RR2 C8ALD RH",
+        model: "RR2 C8ALD RH", 
         spek: "KULIT (DK CHESNUT) HEADREST CTR : ADA SEAR BELT WARNING : ADA",
         model_3d_path: "asset/SEAT RR2 C8ALD.glb",
         audio_path: "asset/audio/C8ALD_RR2_RH.mp3" 
     },
     "@79210-010KP-16@C8ALD@@1@@@": {
-        nama: "C8ALD RR2",
-        model: "C8ALD RR2 LH", 
+        nama: "RR2 C8ALD LH",
+        model: "RR2 C8ALD LH", 
         spek: "KULIT (DK CHESNUT) HEADREST CTR : TIDAK ADA SEAR BELT WARNING : ADA",
         model_3d_path: "asset/SEAT RR2 C8ALD.glb",
         audio_path: "asset/audio/C8ALD_RR2_LH.mp3"
