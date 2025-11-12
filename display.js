@@ -75,28 +75,28 @@ const MOCK_DATABASE = {
         model: "FRON CAHD RH", 
         spek: "FEBRIC MID (DK CHESNUT), -AIR BAG : ADA, -SEAT ADJUSTER {P8} : TIDAK ADA, -SEAT ADJUSTER {M6} : TIDAK ADA, -SEAT ADJUSTER {M4} : ADA, -SHOPING HOOK : ADA -SEAR BELT WARNING CUSION : ADA ",
         model_3d_path: "asset/SEAT RR2 C8ALD.glb",
-        audio_path: "asset/audio/C8ALD_RR2_LH.mp3"
+        audio_path: "asset/audio/CAHD_FRON_LH.mp3"
     },
         "@71200-VT270-C7@CAHD@@1@@@": {
         nama: "FRON CAHD LH",
         model: "FRON CAHD LH", 
         spek: "FEBRIC MID (DK CHESNUT), -AIR BAG : ADA, -SEAT ADJUSTER {P8} : TIDAK ADA, -SEAT ADJUSTER {M6} : ADA, -SEAT ADJUSTER {M4} : TIDAK ADA, -SHOPING HOOK : TIDAK ADA -SEAR BELT WARNING CUSION : TIDAK ADA ",
         model_3d_path: "asset/SEAT RR2 C8ALD.glb",
-        audio_path: "asset/audio/C8ALD_RR2_LH.mp3"
+        audio_path: "asset/audio/CAHD_FRON_LH.mp3"
     },
         "@71100-VT280-E4@CHLD@@1@@@": {
         nama: "FRON CHLD RH",
         model: "FRON CHLD RH", 
         spek: "FEBRIC LOW (DK CHESNUT), -AIR BAG : TIDAK ADA, -SEAT ADJUSTER {P8} : TIDAK ADA, -SEAT ADJUSTER {M6} : TIDAK ADA, -SEAT ADJUSTER {M4} : ADA, -SHOPING HOOK : ADA -SEAT BELT WARNING CUSION : ADA ",
         model_3d_path: "asset/SEAT RR2 C8ALD.glb",
-        audio_path: "asset/audio/C8ALD_RR2_LH.mp3"
+        audio_path: "asset/audio/CHLD_FRON_LH.mp3"
     },
         "@71200-VT240-E4@CHLD@@1@@@": {
         nama: "FRON CHLD LH",
         model: "FRON CHLD LH", 
         spek: "FEBRIC LOW (DK CHESNUT), -AIR BAG : TIDAK ADA, -SEAT ADJUSTER {P8} : TIDAK ADA, -SEAT ADJUSTER {M6} : ADA, -SEAT ADJUSTER {M4} : TIDAK ADA, -SHOPING HOOK : TIDAK ADA -SEAT BELT WARNING CUSION : TIDAK ADA ",
         model_3d_path: "asset/SEAT RR2 C8ALD.glb",
-        audio_path: "asset/audio/C8ALD_RR2_LH.mp3"
+        audio_path: "asset/audio/CHLD_FRON_LH.mp3"
     },
         "@71100-VT330-E4@CALD@@1@@@": {
         nama: "FRON CALD RH",
@@ -117,29 +117,32 @@ const MOCK_DATABASE = {
         model: "FRON CHL RH", 
         spek: "FEBRIC LOW (BLACK), -AIR BAG : TIDAK ADA, -SEAT ADJUSTER {P8} : TIDAK ADA, -SEAT ADJUSTER {M6} : TIDAK ADA, -SEAT ADJUSTER {M4} : ADA, -SHOPING HOOK : ADA -SEAT BELT WARNING CUSION : ADA ",
         model_3d_path: "asset/SEAT RR2 C8ALD.glb",
-        audio_path: "asset/audio/C8ALD_RR2_LH.mp3"
+        audio_path: "asset/audio/CHL_FRON_LH.mp3"
     },
         "@71200-VT240-C4@CHL@@1@@@": {
         nama: "FRON CHL LH",
         model: "FRON CHL LH", 
         spek: "FEBRIC LOW (BLACK), -AIR BAG : TIDAK ADA, -SEAT ADJUSTER {P8} : TIDAK ADA, -SEAT ADJUSTER {M6} : ADA, -SEAT ADJUSTER {M4} : TIDAK ADA, -SHOPING HOOK : TIDAK ADA -SEAT BELT WARNING CUSION : TIDAK ADA ",
         model_3d_path: "asset/SEAT RR2 C8ALD.glb",
-        audio_path: "asset/audio/C8ALD_RR2_LH.mp3"
+        audio_path: "asset/audio/CHL_FRON_LH.mp3"
     },
         "@71100-VT320-C4@CAL@@1@@@": {
         nama: "FRON CAL RH",
         model: "FRON CAL RH", 
         spek: "FEBRIC LOW (BLACK), -AIR BAG : ADA, -SEAT ADJUSTER {P8} : TIDAK ADA, -SEAT ADJUSTER {M6} : TIDAK ADA, -SEAT ADJUSTER {M4} : ADA, -SHOPING HOOK : ADA -SEAT BELT WARNING CUSION : ADA ",
-        model_3d_path: "asset/SEAT RR2 C8ALD.glb",
-        audio_path: "asset/audio/C8ALD_RR2_LH.mp3"
+        model_3d_path: "asset/3d model/SEAT FRON RH CPA.glb",
+        audio_path: "asset/audio/CAL_FRON_RH.mp3"
     },
         "@71200-VT300-C4@CAL@@1@@@": {
         nama: "FRON CAL LH",
         model: "FRON CAL LH", 
         spek: "FEBRIC LOW (BLACK), -AIR BAG : ADA, -SEAT ADJUSTER {P8} : TIDAK ADA, -SEAT ADJUSTER {M6} : ADA, -SEAT ADJUSTER {M4} : TIDAK ADA, -SHOPING HOOK : TIDAK ADA -SEAT BELT WARNING CUSION : TIDAK ADA ",
-        model_3d_path: "asset/SEAT RR2 C8ALD.glb",
-        audio_path: "asset/audio/C8ALD_RR2_LH.mp3"
+        model_3d_path: "asset/3d model/SEAT FRON RH CPA.glb",
+        audio_path: "asset/audio/CAL_FRON_LH.mp3"
     },
+
+
+
         "@71100-VT190-C6@CPA@@1@@@": {
         nama: "FRON CPA RH",
         model: "FRON CPA RH", 
