@@ -8,22 +8,29 @@ const MOCK_DATABASE = {
     // DATA RR2 CMPV
 
     "@79200-VT090-C3@CPA@@1@@@": {
-        nama: "CPA RR2",         // INI MODEL YANG DI TAMPIL KAN
-        model: "CPA RR2 RH", 
+        nama: "RR2 CPA RH",         // INI MODEL YANG DI TAMPIL KAN
+        model: "RR2 CPA RH", 
         spek: "COVER MATRIAL : KULIT , WARNA COVER : FULL HITAM , FITUR : POWER SEAT , JAHITAN : STICK",
         model_3d_path: "asset/3d model/SEAT RR2 RH CPA.glb",        // INI ADALAH 3D PATH UNTUK KODE YANG ANDA TUNJUKKAN DI GAMBAR
         audio_path: "asset/audio/CPA_RR2_RH.mp3" // Ganti dengan path audio yang benar
     },
     "@79210-VT090-C3@CPA@@1@@@": {
-        nama: "CPA RR2",
-        model: "CPA RR2 LH", 
+        nama: "RR2 CPA LH",
+        model: "RR2 CPA LH", 
         spek: "COVER MATRIAL : KULIT , WARNA COVER : FULL HITAM , FITUR : POWER SEAT , JAHITAN : STICK",
         model_3d_path: "asset/3d model/SEAT RR1 RH CRSD.glb",
         audio_path: "asset/audio/CPA_RR2_LH.mp3"
     },
     "@79200-VT080-C3@CAC@@1@@@": {
-        nama: "CAC RR2",
-        model: "CAC RR2 RH", 
+        nama: "RR2 CAC RH",
+        model: "RR2 CAC RH", 
+        spek: "Febric mid (BLACK) HEADREST CTR : ADA SEAR BELT WARNING : ADA",
+        model_3d_path: "asset/MEJA.glb", 
+        audio_path: "asset/audio/CAC_RR2_RH.mp3"
+    },
+    "@79210-VT080-C3@CAC@@1@@@": {
+        nama: "RR2 CAC LH",
+        model: "RR2 CAC LH", 
         spek: "Febric mid (BLACK) HEADREST CTR : ADA SEAR BELT WARNING : ADA",
         model_3d_path: "asset/MEJA.glb", 
         audio_path: "asset/audio/CAC_RR2_RH.mp3"
@@ -496,10 +503,19 @@ const PENANDA_LIST = [
 
     "@79210-VT090-C3@CPA@@1@@@", 
     "@79200-VT090-C3@CPA@@1@@@",
+    "@79200-010KP-16@C8ALD@@1@@@",
+    "@79210-010KP-16@C8ALD@@1@@@",
+    "@79200-VT080-C3@CAC@@1@@@",
+    "@79210-VT080-C3@CAC@@1@@@",
   
     // DATA RR1 CMPV
 
     // DATA FRON CMPV
+    "@71100-VT080-E4@CRSD@@1@@@",
+    "@71200-VT070-E4@CRSD@@1@@@",
+    
+
+    
 
 
 ];
